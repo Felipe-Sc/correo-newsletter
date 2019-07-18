@@ -4,6 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style type="text/css">
+    @media screen and (max-width: 480px) {
+      .two-columns .column,
+      .three-columns .column {
+        max-width: 100% !important;
+      }
+      .two-columns img {
+        max-width: 100% !important;
+      }
+      .three-columns img {
+        max-width: 50% !important;
+      }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 640px) {
+      .three-columns .column {
+        max-width: 33% !important;
+      }
+      .two-columns .column {
+        max-width: 50% !important;
+      }
+    }
+  </style>
 </head>
 <body>
   <table border="1">
@@ -29,12 +52,12 @@
 
     <tr>
       <!-- Estructura a dos columnas -->
-      <td>
+      <td class="two-columns">
         <table border="1">
           <tr>
             <td>
               <!-- columna izquierda -->
-              <table border="1">
+              <table class="column" border="1">
                 <tr>
                   <td>
                     <a href="https://platzi.com/clases/email-marketing/" target="_blank" border="0" style="text-decoration: none;">
@@ -58,7 +81,7 @@
               <!-- Fin columna izquierda -->
 
               <!-- columna derecha -->
-              <table border="1">
+              <table class="column" border="1">
                   <tr>
                     <td>
                       <a href="https://platzi.com/clases/google-analytics/" target="_blank" border="0" style="text-decoration: none;">
@@ -88,12 +111,12 @@
 
     <tr>
       <!-- Estructura a tres columnas -->
-      <td>
+      <td class="three-columns">
         <table>
           <tr>
             <td>
               <!-- Columna 1 -->
-              <table border="1">
+              <table class="column" border="1">
                 <tr>
                   <td>
                     <a href="https://platzi.com/blog/herramientas-gratuitas-para-el-crecimiento-de-mi-emprendimiento/" target="_blank" border="0" style="text-decoration: none;">
@@ -117,7 +140,7 @@
               <!-- Fin Columna 1 -->
 
               <!-- Columna 2 -->
-              <table border="1">
+              <table class="column" border="1">
                 <tr>
                   <td>
                     <a href="https://platzi.com/blog/como-llegar-a-tus-clientes-y-potenciales-consumidores-a-traves-del-email-marketing/" target="_blank" border="0" style="text-decoration: none;">
@@ -141,7 +164,7 @@
               <!-- Fin Columna 2 -->
 
               <!-- Columna 3 -->
-              <table border="1">
+              <table class="column" border="1">
                 <tr>
                   <td>
                     <a href="https://platzi.com/blog/como-evitar-errores-al-enviar-una-campana-de-email-marketing/" target="_blank" border="0" style="text-decoration: none;">
